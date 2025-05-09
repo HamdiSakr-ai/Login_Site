@@ -1,0 +1,137 @@
+/* إعادة تعيين الإعدادات الافتراضية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* الخلفية العامة */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('img/back.png');
+    background-size: cover;       /* يخلي الصورة تغطي الشاشة كلها */
+    background-position: center;  /* يخليها في النص */
+    background-repeat: no-repeat; /* يمنع تكرار الصورة */
+}
+
+/* "logo" */
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 200px;
+    height: 200px;
+    color:#ABAFB5 ;
+   
+    
+}
+
+/* الحاوية الرئيسية */
+.wrapper {
+    width: 420px;
+    background: #1C2D33; /* خلفية داكنة */
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    color: #ABAFB5; /* لون النص */
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* ظل لطيف */
+}
+
+/* العنوان */
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #ABAFB5;
+    margin-bottom: 30px;
+}
+
+/* الحقول النصية */
+.wrapper .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: #2C4A52; /* خلفية داكنة للحقول */
+    border: 2px solid #ABAFB5;
+    outline: none;
+    border-radius: 40px;
+    color: #fff; /* نص أبيض */
+    padding: 20px 45px 20px 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.input-box input::placeholder {
+    color: #B0B8C1; /* لون داكن للplaceholder */
+}
+
+/* التأثير عند التركيز على الحقل */
+.input-box input:focus {
+    border-color: #ABAFB5;
+    background-color: #2C4A52;
+}
+
+/* إعدادات التحقق والتذكير */
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #ABAFB5;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #ABAFB5;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+/* زر الدخول */
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: #ABAFB5; /* لون الزر */
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #122E34; /* نص الزر */
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.wrapper .btn:hover {
+    background-color: #5B646B; /* تدرج مع الخلفية */
+}
+
+/* رابط التسجيل */
+.wrapper .register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.wrapper .register-link a {
+    color: #ABAFB5;
+    text-decoration: none;
+}
+
+.wrapper .register-link a:hover {
+    text-decoration: underline;
+}
